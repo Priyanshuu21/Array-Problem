@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main(){
+//  Declaration of an array
+    int arr[20];
+    cout<<"Array is created successfuly!"<<endl;
+
+//  To see the base address of an created array
+    cout<<&arr;
+}
