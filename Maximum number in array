@@ -1,0 +1,16 @@
+#include <iostream>
+#include <limits.h>
+using namespace std;
+
+int main(){
+    int arr[] = {12,14,134,567,2456,2345,223,123849};
+    int size = 8;
+    int max = INT_MIN;
+    for(int i=0;i<size;i++){
+        if(arr[i] > max){
+            max = arr[i];
+        }
+    }
+    cout<<"Maximum number in given array is :"<<max<<endl;
+    return 0;
+}
