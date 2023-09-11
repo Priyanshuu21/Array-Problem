@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int arr[] = {0,1,1,1,1,0,0,0,1,1,1,1,1,5};
+    int size = 14;
+    int NumZero= 0;
+    int NumOne = 0;
+    int OtherNum = 0;
+    for(int i=0;i<size;i++){
+        if(arr[i] == 0){
+            NumZero++;
+        }
+        else if(arr[i] == 1){
+            NumOne++;
+        }
+        else{
+            OtherNum++;
+        }
+    }
+    cout<<"Number of zeros in array are :"<<NumZero<<endl;
+    cout<<"Number of ones in array are :"<<NumOne<<endl;
+    cout<<"Other numbers in array are :"<<OtherNum<<endl;
+    return 0;
+}
