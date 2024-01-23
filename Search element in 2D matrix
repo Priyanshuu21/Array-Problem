@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int row,col;
+    cout<<"Enter row : "<<endl;
+    cin>>row;
+    cout<<"Enter col : "<<endl;
+    cin>>col;
+
+    int arr[row][col];
+
+    cout<<"Enter elements in the array : "<<endl;
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            cin>>arr[i][j];
+        }
+    }
+
+    int flag = 0;
+    int target;
+    cout<<"Enter search element in the array : "<<endl;
+    cin>>target;
+
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            if(arr[i][j] == target){
+                cout<<"Search element found at row index "<<i << " and column index "<<j;
+                flag = 1;
+            }
+        }
+    }
+    if(flag == 0){
+        cout<<"Search element not found.";
+    }
+}
